@@ -1,0 +1,227 @@
+/* Defina um estilo global para o projeto */
+body {
+    background-color: #1f2539;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  .container {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* Defina um estilo para o título */
+  .title {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+  
+  /* Defina um estilo para o card do pokemon */
+  .pokemon {
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #372c4a;
+  }
+  
+  /* Defina um estilo para a imagem do pokemon */
+  .pokemon img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  /* Defina um estilo para as informações do pokemon */
+  .pokemon-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    text-align: center;
+    background-color: #1c1e2b;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    width: 100%;
+  }
+  
+  .pokemon:hover .pokemon-info {
+    transform: translateY(0);
+  }
+  
+  .pokemon-name {
+    font-size: 32px;
+    margin: 0;
+    text-transform: capitalize;
+    color: #fff;
+  }
+  
+  .pokemon-type {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #b8b8b8;
+  }
+  
+  .pokemon-number {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #b8b8b8;
+  }
+  
+  /* Defina um estilo para o modal do pokemon */
+  .pokemon-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    display: none;
+  }
+  
+  .pokemon-modal img {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .pokemon-modal-name {
+    font-size: 32px;
+    margin: 20px 0 0;
+    text-transform: capitalize;
+  }
+  
+  .pokemon-modal-type {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #ccc;
+  }
+  
+  .pokemon-modal-number {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #ccc;
+  }
+  
+  .pokemon-modal-height,
+  .pokemon-modal-weight,
+  .pokemon-modal-ability {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #ccc;
+}
+
+.pokemon-modal-description {
+font-size: 16px;
+margin: 20px 0;
+}
+
+/* Defina um estilo para os botões */
+.button {
+display: inline-block;
+padding: 10px 20px;
+border-radius: 5px;
+background-color: #f4b400;
+color: #fff;
+font-size: 16px;
+text-decoration: none;
+margin: 10px;
+transition: background-color 0.3s ease;
+}
+
+.button:hover {
+background-color: #f6c030;
+}
+
+/* Defina um estilo para os tipos de pokemon */
+.type-bug {
+background-color: #8cb230;
+}
+
+.type-dark {
+background-color: #58575f;
+}
+
+.type-dragon {
+background-color: #0f6ac0;
+}
+
+.type-electric {
+background-color: #eed535;
+}
+
+.type-fairy {
+background-color: #ed6ec7;
+}
+
+.type-fighting {
+background-color: #d04164;
+}
+
+.type-fire {
+background-color: #fd7d24;
+}
+
+.type-flying {
+background-color: #748fc9;
+}
+
+.type-ghost {
+background-color: #556aae;
+}
+
+.type-grass {
+background-color: #62b957;
+}
+
+.type-ground {
+background-color: #dd7748;
+}
+
+.type-ice {
+background-color: #61cec0;
+}
+
+.type-normal {
+background-color: #9da0aa;
+}
+
+.type-poison {
+background-color: #a552cc;
+}
+
+.type-psychic {
+background-color: #ea5d60;
+}
+
+.type-rock {
+background-color: #baab82;
+}
+
+.type-steel {
+background-color: #417d9a;
+}
+
+.type-water {
+background-color: #4a90da;
+}
